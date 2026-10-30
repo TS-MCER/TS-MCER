@@ -1,0 +1,19 @@
+{
+  "search": {
+    "enabled": true,
+    "metric": "macro_f1",
+    "consensus_refinement_grid": {
+      "huber_clip": [0.25, 0.5, 1.0, 2.0],
+      "k": [8, 16, 32, 64],
+      "alpha": [0.25, 0.5, 0.75, 1.0],
+      "class_power": [0.25, 0.5],
+      "pseudo": [2.0, 8.0, 32.0]
+    },
+    "dual_view_evidence_fusion_grid": {
+      "beta_plus": [0.125, 0.375, 0.75],
+      "evidence_clip": [1.0, 2.0, 3.0],
+      "increment_clip": [0.5, 1.0, 2.0],
+      "tau": [0.125, 0.5]
+    }
+  }
+}

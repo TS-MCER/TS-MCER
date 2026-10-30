@@ -1,0 +1,65 @@
+{
+  "data": {
+    "features": null,
+    "exclude_columns": [],
+    "id_column": null,
+    "group_column": null,
+    "binary_columns": null,
+    "missing_values": ["", "?", "NA", "NaN", "nan", "null", "-1"],
+    "missing_suffix": "__missing"
+  },
+  "split": {
+    "seed": 42,
+    "train_fraction": 0.5,
+    "val_fraction": 0.1,
+    "outer_folds": 5,
+    "inner_folds": 4
+  },
+  "model": {
+    "device": "auto",
+    "checkpoint": null,
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "n_estimators": 4,
+    "preprocessing_jobs": 2,
+    "cpu_threads": 1
+  },
+  "consensus_refinement": {
+    "huber_clip": 0.5,
+    "k": 32,
+    "alpha": 0.75,
+    "class_power": 0.25,
+    "pseudo": 8.0
+  },
+  "dual_view_evidence_fusion": {
+    "enabled": true,
+    "specialized_columns": [],
+    "beta_plus": 0.375,
+    "evidence_clip": 3.0,
+    "increment_clip": 2.0,
+    "tau": 0.0
+  },
+  "search": {
+    "enabled": true,
+    "metric": "macro_f1",
+    "max_candidates": 5000,
+    "max_archive_mib": 512,
+    "consensus_refinement_grid": {
+      "huber_clip": [0.25, 0.5, 1.0, 2.0],
+      "k": [8, 16, 32, 64],
+      "alpha": [0.25, 0.5, 0.75, 1.0],
+      "class_power": [0.25, 0.5],
+      "pseudo": [2.0, 8.0, 32.0]
+    },
+    "dual_view_evidence_fusion_grid": {
+      "beta_plus": [0.125, 0.375, 0.75],
+      "evidence_clip": [1.0, 2.0, 3.0],
+      "increment_clip": [0.5, 1.0, 2.0],
+      "tau": [0.125, 0.5]
+    }
+  },
+  "runtime": {
+    "max_seconds": 7200,
+    "min_free_gpu_gib": 4.0,
+    "verify_reload": true
+  }
+}

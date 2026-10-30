@@ -1,0 +1,12 @@
+# Python >= 3.11. Install an appropriate local PyTorch build for your device.
+numpy==2.4.6
+scipy==1.16.2
+scikit-learn==1.7.2
+joblib==1.5.3
+threadpoolctl==3.6.0
+pandas==2.3.3
+skrub==0.10.1
+einops==0.8.2
+kditransform==1.2.0
+tabpfn==9.1.0
+torch>=2.5

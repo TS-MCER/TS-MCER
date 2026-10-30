@@ -1,0 +1,9 @@
+{
+  "data": {
+    "features": ["basic_a", "basic_b", "special_a"]
+  },
+  "dual_view_evidence_fusion": {
+    "enabled": true,
+    "specialized_columns": ["special_a"]
+  }
+}

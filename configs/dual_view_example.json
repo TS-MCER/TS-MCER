@@ -1,0 +1,6 @@
+{
+  "dual_view_evidence_fusion": {
+    "enabled": true,
+    "specialized_columns": ["feature_a", "feature_b"]
+  }
+}
